@@ -15,6 +15,9 @@ public class EtagFilterConfiguration {
         filterRegistrationBean.addUrlPatterns("/etag");
         filterRegistrationBean.setName("/etagAPI-Filter");
 
+        filterRegistrationBean.addUrlPatterns("/resources/*");
+        filterRegistrationBean.setName("/resourceAPI-Filter");
+
         return filterRegistrationBean;
     }
 }
